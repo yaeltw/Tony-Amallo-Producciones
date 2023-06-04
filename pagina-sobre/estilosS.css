@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.9) 100.98%);
+}
+
+.container__loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20000;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+.loader {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.loader:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #a5001e;
+  border-color: #a5001e transparent #a5001e transparent;
+  animation: loader 1.2s linear infinite;
+  transition: all 1s;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+header {
+  background-image: url(../img/flyer/telon-teatro.jpg);
+  height: 80vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+nav .logo {
+  width: 7em;
+  min-width: 5em;
+}
+nav .links_navegacion {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+nav .links_navegacion li {
+  list-style-type: none;
+}
+nav .links_navegacion li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+}
+nav .links_navegacion li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.25em;
+  bottom: 0;
+  left: 0;
+  background-color: #122250;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+nav .links_navegacion li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hamburguer {
+  display: none;
+  margin-top: 40px;
+  position: relative;
+  z-index: 20;
+  position: relative;
+  cursor: pointer;
+}
+.hamburguer span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #000000;
+  transform-origin: 0px 100%;
+  transition: all 300ms;
+}
+
+.links_navegacion-hamburguer {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sobre-section h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container-teatro-obras {
+  display: flex;
+  padding: 3em;
+}
+.container-teatro-obras .teatro {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  margin-right: 20px;
+}
+.container-teatro-obras .teatro h2 {
+  margin-bottom: 1em;
+}
+.container-teatro-obras .teatro a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.container-teatro-obras .teatro button {
+  display: inline-block;
+  max-width: 15em;
+  margin-top: 20px;
+  padding: 1em 2em;
+  border: none;
+  background-color: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.9) 100.98%);
+  background-color: #a5001e;
+  color: white;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.container-teatro-obras .obras {
+  margin-left: 20px;
+}
+.container-teatro-obras .obras h2 {
+  margin-bottom: 1em;
+}
+.container-teatro-obras .obras .grupos p {
+  margin-bottom: 20px;
+}
+.container-teatro-obras .obras .grupos h3 {
+  margin: 20px 0;
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: black;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  position: relative;
+}
+footer .redes-sociales a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+footer p {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+@media (max-width: 700px) {
+  .hamburguer {
+    display: block;
+    position: relative;
+    z-index: 6;
+  }
+  nav .links_navegacion {
+    display: none;
+  }
+  .logo {
+    position: relative;
+    z-index: 6;
+  }
+  .links_navegacion-hamburguer.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .line1_hamburguer-menu.active {
+    transform: rotate(45deg) translate(-10px, 0px);
+  }
+  .line2_hamburguer-menu.active {
+    opacity: 0;
+    margin-left: -30px;
+  }
+  .line3_hamburguer-menu.active {
+    transform: rotate(-45deg) translate(-5px, 0px);
+  }
+  .links_navegacion-hamburguer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    gap: 40px;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.918);
+    color: black;
+    z-index: 5;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 300ms;
+  }
+  .links_navegacion-hamburguer li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 7;
+  }
+  .links_navegacion-hamburguer li a {
+    text-decoration: none;
+    color: black;
+  }
+  .links_navegacion-hamburguer li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.25em;
+    bottom: 0;
+    left: 0;
+    background-color: #122250;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+  }
+  .links_navegacion-hamburguer li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+  .container-teatro-obras {
+    flex-direction: column;
+  }
+  .container-teatro-obras .teatro {
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+  .container-teatro-obras .obras {
+    margin: 20px 0;
+  }
+}/*# sourceMappingURL=estilosS.css.map */

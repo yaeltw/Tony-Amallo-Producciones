@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f3b8d0219a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tony Amallo Producciones</title>
+    <link rel="shortcut icon" type="image/png" href="./img/logo-normal.png" />
+  </head>
+  <body>
+    <div class="container__loader">
+      <div class="loader"></div>
+    </div>
+    <header>
+      <nav class="navegacion">
+        <div class="logo">
+          <a href="#"
+            ><img src="./img/logo-normal.png" alt="Logo Tony Amallo Producciones"
+          /></a>
+        </div>
+        <div onclick="hamburguer()" class="hamburguer">
+          <span class="line1_hamburguer-menu"></span>
+          <span class="line2_hamburguer-menu"></span>
+          <span class="line3_hamburguer-menu"></span>
+        </div>
+        <ul class="links_navegacion-hamburguer">
+          <li class="link-navegacion"><a href="#">Inicio</a></li>
+          <li class="link-navegacion"><a href="#obras">Producciones</a></li>
+          <li class="link-navegacion"><a href="./pagina-sobre/sobre.html">Sobre</a></li>
+          <li class="link-navegacion"><a href="#contacto">Contacto</a></li>
+        </ul>
+        <ul class="links_navegacion">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#obras">Producciones</a></li>
+          <li><a href="./pagina-sobre/sobre.html" target="_blank">Sobre</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <section class="presentacion">
+        <div class="text-left">
+          <h1>
+            Taller de teatro de Tony Amallo
+            <img style="display: inline-block; max-width: 1.2em" src="./img/performing-arts_1f3ad.png" alt="telon teatro"/>
+          </h1>
+          <h2 class="maquina-escribir">Teatro con amor y pasión</h2>
+          <a href="#contacto"><button>Empeza ahora!</button></a>
+        </div>
+        <div class="imagen-right">
+          <img
+            src="./img/otra-imagen-formula-de-la-felicidad.jpg"
+            alt="La formula de la felicidad"
+          />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="obras" class="obras">
+        <div class="bg-image">
+          <ul>
+            <li><img src="./img/carrusel/image-1.jpeg" alt="" /></li>
+            <li><img src="./img/carrusel/image-10.jpeg" alt="" /></li>
+            <li><img src="./img/carrusel/image-11.jpeg" alt="" /></li>
+            <li><img src="./img/carrusel/image-4.jpeg" alt="" /></li>
+            <li><img src="./img/carrusel/image-8.jpeg" alt="" /></li>
+          </ul>
+        </div>
+        <article class="obras-container">
+          <div class="opacity-low"></div>
+          <h2>Obras todo el año!</h2>
+          <h3>Próximas fechas!</h3>
+          <div class="el-mismo-destino">
+            <div class="img-emd">
+              <img
+                src="./img/flyer/el-mismo-destino-flyer.jpg"
+                alt="flyer el mismo destino"
+              />
+            </div>
+            <div class="info">
+              <h1>El mismo destino</h1>
+              <p>
+                Intriga, locura, tragedia y humor se entrelazan con distintas
+                historias, mientras una pareja en crisis, intenta solucionar sus
+                problemas, tomando una decisión desesperada; Una comedia
+                que no da respiro “El Mismo Destino”, tarde o temprano todos
+                llegamos al mismo lugar.
+              </p>
+            </div>
+            <p>
+              <strong>Actores:</strong> Melina Joaquín, Santiago Amallo, Gonzalo García, Sofía
+              Márquez, Sol García, Fiorella Rossi, Agustín Álvarez Drago,
+              Mariela De Bella, Javier Delbó, Liliana Martínez Carreté, y Juan
+              Ignacio Espíndola.
+            </p>
+            <p><strong>Fecha de estreno: Viernes 21 de abril 21:30hs Teatro Verdi</strong></p>
+            <button onclick="salirElMismoDestino()">X</button>
+          </div>
+          <div class="reunion-de-consorcio">
+            <div class="img-rdc">
+              <img
+                src="./img/flyer/reunion-de-consorcio-flyer.jpg"
+                alt="flyer reunion de consorcio"
+              />
+            </div>
+            <div class="info-rdc">
+              <h1>Reunión de consorcio</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                odit, velit magnam facere minima sed id, voluptatem ducimus
+                molestias quidem repudiandae tempora soluta nostrum reiciendis
+                nobis illum sint? Asperiores, repellendus.
+              </p>
+            </div>
+            <p>
+              Actores: Lorem lorem, lorem imsup, lorem ipsum, lorem ipsum, lorem
+              ipsum
+            </p>
+            <p> <strong>Fecha de estreno: Viernes 28/4 Teatro Verdi 21:30hs </strong> </p>
+            <button onclick="salirReunionDeConsorcio()">X</button>
+          </div>
+          <div class="cabaña">
+            <div class="img-cabaña">
+              <img src="./img/flyer/la-cabaña-flyer.png" alt="flyer cabaña" />
+            </div>
+            <div class="info-cabaña">
+              <h1>Reunion de consorcio</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                odit, velit magnam facere minima sed id, voluptatem ducimus
+                molestias quidem repudiandae tempora soluta nostrum reiciendis
+                nobis illum sint? Asperiores, repellendus.
+              </p>
+            </div>
+            <p>
+              Actores: Lorem lorem, lorem imsup, lorem ipsum, lorem ipsum, lorem
+              ipsum
+            </p>
+            <p> <strong>Fecha de estreno: Viernes 23/6 Cine Teatro Rawson 21hs </strong></p>
+            <button onclick="salirDeCabaña()">X</button>
+          </div>
+          <div class="obras-flyers">
+            <div>
+              <img
+                onclick="verElMismoDestino()"
+                src="./img/flyer/el-mismo-destino-flyer.jpg"
+                loading="lazy"
+                alt="el mismo destino flyer"
+              />
+              <p>El mismo destino!</p>
+            </div>
+            <div>
+              <img
+                onclick="verReunionDeConsorcio()"
+                src="./img/flyer/reunion-de-consorcio-flyer.jpg"
+                loading="lazy"
+                alt="reunion de consorcio flyer"
+              />
+              <p>Reunion de consorcio</p>
+            </div>
+            <div>
+              <img
+                onclick="verCabaña()"
+                src="./img/flyer/la-cabaña-flyer.png"
+                loading="lazy"
+                alt="la cabaña flyer"
+              />
+              <p>La cabaña</p>
+            </div>
+          </div>
+          <div class="conseguir-entradas">
+            <p>Obtene tus entradas!</p>
+            <a href="#contacto">Comprar</a>
+          </div>
+          <a href="./catalago-obras/catalago.html">Ver catálogo de obras!</a>
+        </article>
+      </section>
+      <section id="contacto" class="contacto">
+        
+        <div class="container-contacto">
+          <div class="lds-dual-ring"></div> 
+          <div class="container-form">
+            <h2>Contacto</h2>
+            <form
+              id="formulario-id"
+              action="https://formspree.io/f/mvonyeaa"
+              method="POST"
+            >
+              <label for="asunto" style="display: none">Asunto</label>
+              <select
+                onchange="cambioSelect()"
+                required
+                name="Asunto"
+                id="asunto"
+              >
+                <option disabled selected>Asunto</option>
+                <option value="comprar-entradas">Comprar entradas</option>
+                <option value="empezar-teatro">Empezar teatro!</option>
+              </select>
+              <label for="selectObras" style="display: none">Obra</label>
+              <select
+                value="hola"
+                required
+                style="display: none"
+                id="selectObras"
+                name="obra"
+              ></select>
+              <label for="edadEmpezarTeatro" style="display: none">Edad</label>
+              <input
+                type="number"
+                name="edad"
+                placeholder="Edad"
+                required
+                style="display: none"
+                id="edadEmpezarTeatro"
+              />
+              <label for="nombre" style="display: none">Nombre</label>
+              <input
+                class="inputs"
+                type="text"
+                name="Nombre"
+                placeholder="Nombre"
+                id="nombre"
+                required
+              />
+              <label for="email" style="display: none">Email</label>
+              <input
+                class="inputs"
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Email"
+                required
+              />
+              <label for="mensaje" style="display: none">Mensaje</label>
+              <textarea
+                class="mensaje"
+                name="Mensaje"
+                id="mensaje"
+                placeholder="Mensaje"
+              ></textarea>
+              <br />
+              <button>Enviar</button>
+            </form>
+          </div>
+          <div class="foto-tony">
+            <img src="./img/papá-posando-facha-removebg.png" alt="Tony Amallo" />
+          </div>
+        </div>
+      </section>
+      <section class="gracias-form">
+        <h2>Gracias por enviar tu consulta! En breve sera atendida!</h2>
+        <img src="./img/logo-normal.png" alt="logo tony amallo producciones">
+        <button onclick="ocultarGracias()">Ocultar</button>
+      </section>
+    </main>
+    <footer>
+      <div class="redes-sociales">
+        <a href="https://twitter.com/tonyamallo" target="_blank"
+          ><i class="fa-brands fa-twitter" style="color: #ffff"></i>.</a
+        >
+        <a href="https://www.facebook.com/trelew.teatro" target="_blank"
+          ><i class="fa-brands fa-facebook" style="color: #ffff"></i>.</a
+        >
+        <a href="https://www.instagram.com/tonyamallo/" target="_blank"
+          ><i class="fa-brands fa-instagram" style="color: #ffff"></i>.</a
+        >
+      </div>
+      <p class="copyright">© Copyright All rights reserved | Yael A.</p>
+      <div>
+        <p>tonyamallo@gmail.com</p>
+        <p>25 de mayo 740 Trelew Chubut</p>
+        <p>2804719228</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
